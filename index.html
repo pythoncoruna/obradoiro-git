@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Obradoiro git</h1>
+				</section>
+				<section>
+					<h2>Qué é GIT</h2>
+					<ul>
+						<li>Git é un sistema de control de versións</li>
+						<li>Serve pra levar control dos contidos dos nosos proxectos</li>
+						<li>https://git-scm.com</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Conceptos: Repositorio</h2>
+					<p>Un repositorio é un árbol de carpetas ou directorios
+						que conten os ficheiros co traballo que nos interesa versionar
+						e serán vixiados por GIT</p>
+				</section>
+				<section>
+					<h2>git init: Crear un repositorio inicial</h2>
+					<ul>
+						<li>O primer paso pra usar git é declarar cal vai ser a ruta raíz do repositorio</li>
+						<li>Basta con situarse no directorio desexado e executar <mark>git init</mark></li>
+						<li>Ex: <pre><code>$ git init</code></pre></li>
+					</ul>
+				</section>
+				<section>
+					<h2>TODO: Instruccións pra crear un repo vacío</h2>
+				</section>
+				<section>
+					<h2>git add: Engadir contido ao noso repositorio</h2>
+					<ul>
+						<li>Pra controlar e versionar os nosos ficheiros, o primeiro é engadilos</li>
+						<li>Con <mark>git add</mark> comunicamos a GIT que queremos seguemento destes ficheiros</li>
+						<li>Ex: <pre><code>$ git add novoFicheiro.html</code></pre></li>
+					</ul>
+				</section>
+				<section>TODO: Instruccións pra crear un ficheiro e engadilo</section>
+				<section>
+					<h2>git status: Qué carallo pasa aquí, ho</h2>
+					<ul>
+						<li><mark>git status</mark> infórmanos sobre o estado actual do repositorio</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Conceptos: Working tree, index</h2>
+				</section>
+				<section>
+					<h2>Conceptos: Commit</h2>
+					<ul>
+						<li>Un <mark>commit</mark> é un conxunto de cambios agrupados con significado propio</li>
+						<li>Gravamos commits no repositorio que cambian o seu estado</li>
+						<li>Por tanto, gardar ou aplicar un commit, supón cambiar os ficheiros</li>
+						<li>Ao facer cada commit, débese introducir unha mensaxe que describe o cambio que provoca</li>
+					</ul>
+				</section>
+				<section>
+					<h2>git commit: Gardando os nosos cambios</h2>
+					<ul>
+						<li>Con este commando creamos un commit que agrupa todos os cambios engadidos ata o momento</li>
+						<li>Tralo commit, o traballo feito nos ficheiros e o código se considera "un paso" máis avanzado</li>
+						<li>Ex: <pre><code>$ git commit -m "Amplía o tamaño do botón"</code></pre></li>
+						<li>Como podemos ver, este commit fai un botón máis grande.</li>
+					</ul>
+				</section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+				<section></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
